@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Collections.Generic; 
 using System.IO;
 
 namespace BankingSystem
@@ -180,7 +180,7 @@ namespace BankingSystem
             }
         }
 
-        // --- File Saving/Loading ---
+        // File Saving/Loading 
 
         static void SaveToFile()
         {
@@ -193,7 +193,7 @@ namespace BankingSystem
                     if (acc is SavingsAccount) type = "Savings";
                     else if (acc is FixedAccount) type = "Fixed";
                     
-                    writer.WriteLine($"{type},{acc.AccountNumber},{acc.Owner.Name},{acc.Owner.Contact},{acc.Balance} ");
+                    writer.WriteLine($"{type} | {acc.AccountNumber}| {acc.Owner.Name} | {acc.Owner.Contact} | {acc.Balance} ");
                 }
             }
             Console.WriteLine("Data saved to file.");
