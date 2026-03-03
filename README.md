@@ -1,13 +1,10 @@
 # Banking System
-<center>
-<h1>Banking-System is the final project of C# /.net </h1>
-</center>
 
 
 ## Project Description
-<h1>
+
 This is a console-based Banking System application built with C# and .NET. The system allows users to manage bank accounts with various account types, perform transactions, and maintain transaction history.
-</h1>
+
 
 ### Features
 
