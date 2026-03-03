@@ -1,10 +1,16 @@
 # Banking System
 
 
-## Project Description
+## Information
+ - <p> Name : Abhijeet Shrestha </p>
+ - Student ID / NP Number : NP071010
+ - Course : <img><img width="30" height="30" alt="image" src="https://github.com/user-attachments/assets/b820f32e-82ea-4b6b-8082-68d79700c319" />
+<img>
 
+## Project Description
 This is a console-based Banking System application built with C# and .NET. The system allows users to manage bank accounts with various account types, perform transactions, and maintain transaction history.
 
+  
 
 ### Features
 
@@ -88,7 +94,28 @@ Once the application starts, you'll see the following menu:
 
 Simply enter the corresponding number to access each feature.
 
-## Data Persistence
+
+
+## Classes Overview
+
+- **Customer**: Represents a bank customer with Name and Contact information.
+
+- **Transaction**: Records transaction details including Type (Deposit/Withdrawal), Amount, Balance After transaction, and Date/Time.
+
+- **Account (Abstract)**: Base class for all account types. Handles common operations like Deposit and maintains transaction history. Defines abstract Withdraw method for account-specific withdrawal rules.
+
+- **SavingsAccount**: A savings account type that enforces a minimum balance of 500. Withdrawal is restricted if the balance would fall below this limit.
+
+- **CurrentAccount**: A business account type that allows overdraft up to -1000. Useful for businesses requiring flexible credit limits.
+
+- **FixedAccount**: A fixed deposit account where withdrawals are not permitted. Typically used for long-term savings with fixed interest rates.
+
+- **Custom Exceptions**: 
+  - **InsufficientBalanceException**: Thrown when an account balance is insufficient for a withdrawal.
+  - **InvalidAccountException**: Thrown when invalid account operations are attempted.
+
+
+## Data Store 
 
 The system automatically saves all account and transaction data to `bank_data.txt` when you exit (Option 9). This data is loaded automatically when you restart the application.
 
@@ -97,14 +124,14 @@ The system automatically saves all account and transaction data to `bank_data.tx
 ### Technologies Used
 - **Language**: C#
 - **Framework**: .NET 7.0 / .NET 8.0
-- **Architecture**: Object-Oriented Programming with Inheritance and Polymorphism
-- **Data Storage**: Text file-based persistence
+- **Architecture**: Object-Oriented Programming with Abstraction, Inheritance and Polymorphism
+- **Data Storage**: Text file-based 
 
 ### Project Structure
 - `Models.cs`: Contains all class definitions (Account, Customer, Transaction, etc.)
 - `Program.cs`: Main application logic and user interface
 - `BankingSystem.csproj`: Project configuration file
-- `bank_data.txt`: Data persistence file (auto-generated)
+- `bank_data.txt`: Data Store file (auto-generated)
 
 ## Account Rules
 
