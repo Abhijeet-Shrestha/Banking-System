@@ -74,7 +74,7 @@ This is a console-based Banking System application built with C# and .NET. The s
 Once the application starts, you'll see the following menu:
 
 ```
---- WELCOME TO SIMPLE BANK ---
+--- WELCOME TO BANK SYSTEM ---
 1. Open New Account
 2. Deposit Money
 3. Withdraw Money
