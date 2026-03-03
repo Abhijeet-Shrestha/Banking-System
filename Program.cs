@@ -6,7 +6,7 @@ namespace BankingSystem
 {
     class Program
     {
-        // This list will store all our accounts while the program runs
+        // This list will store all data of our accounts while the program runs
         static List<Account> allAccounts = new List<Account>();
         static string fileName = "bank_data.txt";
 
@@ -176,7 +176,7 @@ namespace BankingSystem
             Console.WriteLine("\n--- ALL ACCOUNTS ---");
             foreach (Account acc in allAccounts)
             {
-                Console.WriteLine($"Account number: {acc.AccountNumber} | Name: {acc.Owner.Name} | Balance: {acc.Balance} Account Type:{acc.GetType().Name}");
+                Console.WriteLine($"Account number: {acc.AccountNumber} | Name: {acc.Owner.Name} | Balance: {acc.Balance} | Account Type:{acc.GetType().Name}");
             }
         }
 
