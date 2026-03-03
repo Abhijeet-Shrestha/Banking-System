@@ -1,5 +1,4 @@
 # Banking System
-Banking-System is the final project of C# /.net 
 
 
 
